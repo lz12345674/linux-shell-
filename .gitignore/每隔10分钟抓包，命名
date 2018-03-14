@@ -6,4 +6,7 @@ echo $time;
 tcpdump -i eth0 -c 10 -w/tmp/$time.cap;
 
 
-vim 
+
+
+修改crontable添加一个10分钟执行的脚本。
+echo '*/10 * * * * root /root/tcpdump_min_10.sh' >> /etc/crontab
