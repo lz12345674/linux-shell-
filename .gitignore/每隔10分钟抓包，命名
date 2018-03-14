@@ -1,0 +1,9 @@
+[root@izwz97uhqrjb77oln1qrk6z ~]# cat tcpdump_min_10.sh
+#! /bin/sh
+source /etc/profile
+time=`date +'%Y%m%d%H%M'`;
+echo $time;
+tcpdump -i eth0 -c 10 -w/tmp/$time.cap;
+
+
+vim 
